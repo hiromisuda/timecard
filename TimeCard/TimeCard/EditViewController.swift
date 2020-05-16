@@ -63,7 +63,7 @@ class EditViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     func reloadTable(){
-        // テーブルリストを再読み込み
+        // テーブルリストを再読み込みほげ
         self.tableView.reloadData()
     }
     

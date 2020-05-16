@@ -21,6 +21,11 @@
 		B70F966B23ED3449009F0AEE /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F966923ED3449009F0AEE /* HistoryTableViewCell.swift */; };
 		B70F966C23ED3449009F0AEE /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B70F966A23ED3449009F0AEE /* HistoryTableViewCell.xib */; };
 		B716AE9723AA168B00809068 /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716AE9623AA168B00809068 /* TimeModel.swift */; };
+		B72F2FDA244B1407006EEB29 /* EditTableHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F2FD8244B1407006EEB29 /* EditTableHeaderViewCell.swift */; };
+		B72F2FDB244B1407006EEB29 /* EditTableHeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72F2FD9244B1407006EEB29 /* EditTableHeaderViewCell.xib */; };
+		B72F2FDD244B223F006EEB29 /* EditTableSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F2FDC244B223F006EEB29 /* EditTableSectionHeaderView.swift */; };
+		B72F2FDF244B2B21006EEB29 /* EditTableSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72F2FDE244B2B21006EEB29 /* EditTableSectionHeaderView.xib */; };
+		B7318DFE2441EC7B00E95B74 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7318DFD2441EC7B00E95B74 /* EditViewController.swift */; };
 		B733F0D82400297800A7630D /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B733F0D72400297800A7630D /* ButtonExtension.swift */; };
 		B733F0DA240029A100A7630D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B733F0D9240029A100A7630D /* UIViewExtension.swift */; };
 		B75F10BF23EAC70E0019A844 /* WorkHourModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F10BE23EAC70E0019A844 /* WorkHourModel.swift */; };
@@ -34,6 +39,8 @@
 		B7F5C19E23A00442009AAAA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F5C19C23A00442009AAAA7 /* Main.storyboard */; };
 		B7F5C1A023A00447009AAAA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F5C19F23A00447009AAAA7 /* Assets.xcassets */; };
 		B7F5C1A323A00447009AAAA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F5C1A123A00447009AAAA7 /* LaunchScreen.storyboard */; };
+		B7FFDC882466A14D00BCB7DD /* EditSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FFDC862466A14D00BCB7DD /* EditSectionTableViewCell.swift */; };
+		B7FFDC892466A14D00BCB7DD /* EditSectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7FFDC872466A14D00BCB7DD /* EditSectionTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +59,11 @@
 		B70F966923ED3449009F0AEE /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		B70F966A23ED3449009F0AEE /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 		B716AE9623AA168B00809068 /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
+		B72F2FD8244B1407006EEB29 /* EditTableHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTableHeaderViewCell.swift; sourceTree = "<group>"; };
+		B72F2FD9244B1407006EEB29 /* EditTableHeaderViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditTableHeaderViewCell.xib; sourceTree = "<group>"; };
+		B72F2FDC244B223F006EEB29 /* EditTableSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTableSectionHeaderView.swift; sourceTree = "<group>"; };
+		B72F2FDE244B2B21006EEB29 /* EditTableSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditTableSectionHeaderView.xib; sourceTree = "<group>"; };
+		B7318DFD2441EC7B00E95B74 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		B733F0D72400297800A7630D /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
 		B733F0D9240029A100A7630D /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		B75F10BE23EAC70E0019A844 /* WorkHourModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHourModel.swift; sourceTree = "<group>"; };
@@ -67,6 +79,8 @@
 		B7F5C19F23A00447009AAAA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7F5C1A223A00447009AAAA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7F5C1A423A00447009AAAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7FFDC862466A14D00BCB7DD /* EditSectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSectionTableViewCell.swift; sourceTree = "<group>"; };
+		B7FFDC872466A14D00BCB7DD /* EditSectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditSectionTableViewCell.xib; sourceTree = "<group>"; };
 		C8FB75C94B73CDD20D420D26 /* Pods-TimeCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeCard.debug.xcconfig"; path = "Target Support Files/Pods-TimeCard/Pods-TimeCard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +168,13 @@
 				B762658023BA767D00EAA54E /* Util.swift */,
 				B733F0D72400297800A7630D /* ButtonExtension.swift */,
 				B733F0D9240029A100A7630D /* UIViewExtension.swift */,
+				B7318DFD2441EC7B00E95B74 /* EditViewController.swift */,
+				B72F2FD8244B1407006EEB29 /* EditTableHeaderViewCell.swift */,
+				B72F2FD9244B1407006EEB29 /* EditTableHeaderViewCell.xib */,
+				B72F2FDC244B223F006EEB29 /* EditTableSectionHeaderView.swift */,
+				B72F2FDE244B2B21006EEB29 /* EditTableSectionHeaderView.xib */,
+				B7FFDC862466A14D00BCB7DD /* EditSectionTableViewCell.swift */,
+				B7FFDC872466A14D00BCB7DD /* EditSectionTableViewCell.xib */,
 			);
 			path = TimeCard;
 			sourceTree = "<group>";
@@ -227,10 +248,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7FFDC892466A14D00BCB7DD /* EditSectionTableViewCell.xib in Resources */,
 				B7F5C1A323A00447009AAAA7 /* LaunchScreen.storyboard in Resources */,
 				B7F5C1A023A00447009AAAA7 /* Assets.xcassets in Resources */,
 				B70F966C23ED3449009F0AEE /* HistoryTableViewCell.xib in Resources */,
 				B7F5C19E23A00442009AAAA7 /* Main.storyboard in Resources */,
+				B72F2FDF244B2B21006EEB29 /* EditTableSectionHeaderView.xib in Resources */,
+				B72F2FDB244B1407006EEB29 /* EditTableHeaderViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72F2FDD244B223F006EEB29 /* EditTableSectionHeaderView.swift in Sources */,
 				B733F0D82400297800A7630D /* ButtonExtension.swift in Sources */,
 				B70F966823ED2F9D009F0AEE /* HistoryTableViewController.swift in Sources */,
 				B733F0DA240029A100A7630D /* UIViewExtension.swift in Sources */,
@@ -295,11 +320,14 @@
 				B7F5C19B23A00442009AAAA7 /* ViewController.swift in Sources */,
 				B762658123BA767D00EAA54E /* Util.swift in Sources */,
 				B75F10BF23EAC70E0019A844 /* WorkHourModel.swift in Sources */,
+				B7FFDC882466A14D00BCB7DD /* EditSectionTableViewCell.swift in Sources */,
 				B7F5C19723A00442009AAAA7 /* AppDelegate.swift in Sources */,
 				B70F966623ED0676009F0AEE /* ManageRepository.swift in Sources */,
 				B70F966023ED0653009F0AEE /* TaskRepository.swift in Sources */,
 				B716AE9723AA168B00809068 /* TimeModel.swift in Sources */,
+				B7318DFE2441EC7B00E95B74 /* EditViewController.swift in Sources */,
 				B70F966B23ED3449009F0AEE /* HistoryTableViewCell.swift in Sources */,
+				B72F2FDA244B1407006EEB29 /* EditTableHeaderViewCell.swift in Sources */,
 				B70F966223ED065F009F0AEE /* TaskWorkHourRepository.swift in Sources */,
 				B7F5C19923A00442009AAAA7 /* SceneDelegate.swift in Sources */,
 				B70F965A23ED037D009F0AEE /* StartPointModel.swift in Sources */,

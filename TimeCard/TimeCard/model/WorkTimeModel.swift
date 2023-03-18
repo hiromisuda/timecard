@@ -1,21 +1,15 @@
 //
-//  TaskWorkHourModel.swift
+//  WorkTimeModel.swift
 //  TimeCard
 //
-//  Created by works on 2020/02/07.
+//  Created by works on 2020/02/05.
 //  Copyright © 2020 pupuplanet. All rights reserved.
 //
 
 import RealmSwift
 
-/**
- TODO 次リリース
- タスク毎労働時間
- */
-class TaskWorkHourModel : Object{
+class WorkTimeModel : Object{
     @objc dynamic var id: Int = 0
-    @objc dynamic var workHourId: Int = 0
-    @objc dynamic var taskId: String = ""
     @objc dynamic var memo: String = ""
     @objc dynamic var startDate: Date? = nil
     @objc dynamic var endDate: Date? = nil
@@ -27,4 +21,3 @@ class TaskWorkHourModel : Object{
     }
     
 }
-

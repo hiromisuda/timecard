@@ -15,7 +15,7 @@ class HistoryTableViewCell: UITableViewCell {
     @IBOutlet weak var startTimeLabel: UILabel!
     @IBOutlet weak var endTimeLabel: UILabel!
     
-    var model:WorkHourModel!
+    var model:WorkTimeModel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,7 +24,7 @@ class HistoryTableViewCell: UITableViewCell {
 
     
     //セル初期表示
-    func setCell(model: WorkHourModel) {
+    func setCell(model: WorkTimeModel) {
   
         //開始時間
         if((model.startDate) != nil){

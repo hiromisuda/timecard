@@ -12,7 +12,7 @@
 		B70F965823ED02EB009F0AEE /* TaskWorkHourModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F965723ED02EB009F0AEE /* TaskWorkHourModel.swift */; };
 		B70F965A23ED037D009F0AEE /* StartPointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F965923ED037D009F0AEE /* StartPointModel.swift */; };
 		B70F965C23ED03B7009F0AEE /* ManageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F965B23ED03B7009F0AEE /* ManageModel.swift */; };
-		B70F965E23ED0648009F0AEE /* WorkHourRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F965D23ED0648009F0AEE /* WorkHourRepository.swift */; };
+		B70F965E23ED0648009F0AEE /* WorkTimeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F965D23ED0648009F0AEE /* WorkTimeRepository.swift */; };
 		B70F966023ED0653009F0AEE /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F965F23ED0653009F0AEE /* TaskRepository.swift */; };
 		B70F966223ED065F009F0AEE /* TaskWorkHourRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F966123ED065F009F0AEE /* TaskWorkHourRepository.swift */; };
 		B70F966423ED066C009F0AEE /* StartPointRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F966323ED066C009F0AEE /* StartPointRepository.swift */; };
@@ -28,11 +28,14 @@
 		B7318DFE2441EC7B00E95B74 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7318DFD2441EC7B00E95B74 /* EditViewController.swift */; };
 		B733F0D82400297800A7630D /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B733F0D72400297800A7630D /* ButtonExtension.swift */; };
 		B733F0DA240029A100A7630D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B733F0D9240029A100A7630D /* UIViewExtension.swift */; };
-		B75F10BF23EAC70E0019A844 /* WorkHourModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F10BE23EAC70E0019A844 /* WorkHourModel.swift */; };
+		B74FB9B6249A7102006D7DBC /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74FB9B5249A7102006D7DBC /* DateExtension.swift */; };
+		B75F10BF23EAC70E0019A844 /* WorkTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F10BE23EAC70E0019A844 /* WorkTimeModel.swift */; };
 		B762657B23B71CA800EAA54E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762657A23B71CA800EAA54E /* MainViewController.swift */; };
 		B762657D23B78D4E00EAA54E /* CreateSerialNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762657C23B78D4E00EAA54E /* CreateSerialNumber.swift */; };
 		B762657F23BA62A400EAA54E /* TimeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762657E23BA62A400EAA54E /* TimeRepository.swift */; };
 		B762658123BA767D00EAA54E /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762658023BA767D00EAA54E /* Util.swift */; };
+		B7C93E2C248FDEEE006D7CD7 /* DetailTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C93E2B248FDEEE006D7CD7 /* DetailTimeModel.swift */; };
+		B7C93E2E24905CD2006D7CD7 /* DetailTimeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C93E2D24905CD2006D7CD7 /* DetailTimeRepository.swift */; };
 		B7F5C19723A00442009AAAA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5C19623A00442009AAAA7 /* AppDelegate.swift */; };
 		B7F5C19923A00442009AAAA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5C19823A00442009AAAA7 /* SceneDelegate.swift */; };
 		B7F5C19B23A00442009AAAA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5C19A23A00442009AAAA7 /* ViewController.swift */; };
@@ -50,7 +53,7 @@
 		B70F965723ED02EB009F0AEE /* TaskWorkHourModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWorkHourModel.swift; sourceTree = "<group>"; };
 		B70F965923ED037D009F0AEE /* StartPointModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPointModel.swift; sourceTree = "<group>"; };
 		B70F965B23ED03B7009F0AEE /* ManageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageModel.swift; sourceTree = "<group>"; };
-		B70F965D23ED0648009F0AEE /* WorkHourRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHourRepository.swift; sourceTree = "<group>"; };
+		B70F965D23ED0648009F0AEE /* WorkTimeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTimeRepository.swift; sourceTree = "<group>"; };
 		B70F965F23ED0653009F0AEE /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
 		B70F966123ED065F009F0AEE /* TaskWorkHourRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWorkHourRepository.swift; sourceTree = "<group>"; };
 		B70F966323ED066C009F0AEE /* StartPointRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPointRepository.swift; sourceTree = "<group>"; };
@@ -66,11 +69,14 @@
 		B7318DFD2441EC7B00E95B74 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		B733F0D72400297800A7630D /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
 		B733F0D9240029A100A7630D /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
-		B75F10BE23EAC70E0019A844 /* WorkHourModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHourModel.swift; sourceTree = "<group>"; };
+		B74FB9B5249A7102006D7DBC /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		B75F10BE23EAC70E0019A844 /* WorkTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTimeModel.swift; sourceTree = "<group>"; };
 		B762657A23B71CA800EAA54E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B762657C23B78D4E00EAA54E /* CreateSerialNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSerialNumber.swift; sourceTree = "<group>"; };
 		B762657E23BA62A400EAA54E /* TimeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRepository.swift; sourceTree = "<group>"; };
 		B762658023BA767D00EAA54E /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		B7C93E2B248FDEEE006D7CD7 /* DetailTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTimeModel.swift; sourceTree = "<group>"; };
+		B7C93E2D24905CD2006D7CD7 /* DetailTimeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTimeRepository.swift; sourceTree = "<group>"; };
 		B7F5C19323A00442009AAAA7 /* TimeCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F5C19623A00442009AAAA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7F5C19823A00442009AAAA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,15 +110,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B74FB9B4249A709D006D7DBC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B74FB9B5249A7102006D7DBC /* DateExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		B75F10BC23EABE700019A844 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				B716AE9623AA168B00809068 /* TimeModel.swift */,
-				B75F10BE23EAC70E0019A844 /* WorkHourModel.swift */,
+				B75F10BE23EAC70E0019A844 /* WorkTimeModel.swift */,
+				B7C93E2B248FDEEE006D7CD7 /* DetailTimeModel.swift */,
+				B70F965B23ED03B7009F0AEE /* ManageModel.swift */,
 				B70F965523ED02BE009F0AEE /* TaskModel.swift */,
 				B70F965723ED02EB009F0AEE /* TaskWorkHourModel.swift */,
 				B70F965923ED037D009F0AEE /* StartPointModel.swift */,
-				B70F965B23ED03B7009F0AEE /* ManageModel.swift */,
+				B716AE9623AA168B00809068 /* TimeModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -120,12 +135,13 @@
 		B75F10BD23EABE830019A844 /* repository */ = {
 			isa = PBXGroup;
 			children = (
-				B762657E23BA62A400EAA54E /* TimeRepository.swift */,
-				B70F965D23ED0648009F0AEE /* WorkHourRepository.swift */,
+				B70F965D23ED0648009F0AEE /* WorkTimeRepository.swift */,
+				B7C93E2D24905CD2006D7CD7 /* DetailTimeRepository.swift */,
+				B70F966523ED0676009F0AEE /* ManageRepository.swift */,
 				B70F965F23ED0653009F0AEE /* TaskRepository.swift */,
 				B70F966123ED065F009F0AEE /* TaskWorkHourRepository.swift */,
 				B70F966323ED066C009F0AEE /* StartPointRepository.swift */,
-				B70F966523ED0676009F0AEE /* ManageRepository.swift */,
+				B762657E23BA62A400EAA54E /* TimeRepository.swift */,
 			);
 			path = repository;
 			sourceTree = "<group>";
@@ -151,6 +167,7 @@
 		B7F5C19523A00442009AAAA7 /* TimeCard */ = {
 			isa = PBXGroup;
 			children = (
+				B74FB9B4249A709D006D7DBC /* Extension */,
 				B75F10BD23EABE830019A844 /* repository */,
 				B75F10BC23EABE700019A844 /* model */,
 				B7F5C19623A00442009AAAA7 /* AppDelegate.swift */,
@@ -311,15 +328,18 @@
 				B733F0D82400297800A7630D /* ButtonExtension.swift in Sources */,
 				B70F966823ED2F9D009F0AEE /* HistoryTableViewController.swift in Sources */,
 				B733F0DA240029A100A7630D /* UIViewExtension.swift in Sources */,
+				B7C93E2E24905CD2006D7CD7 /* DetailTimeRepository.swift in Sources */,
 				B762657D23B78D4E00EAA54E /* CreateSerialNumber.swift in Sources */,
+				B7C93E2C248FDEEE006D7CD7 /* DetailTimeModel.swift in Sources */,
 				B762657F23BA62A400EAA54E /* TimeRepository.swift in Sources */,
 				B70F966423ED066C009F0AEE /* StartPointRepository.swift in Sources */,
 				B70F965623ED02BE009F0AEE /* TaskModel.swift in Sources */,
 				B70F965C23ED03B7009F0AEE /* ManageModel.swift in Sources */,
-				B70F965E23ED0648009F0AEE /* WorkHourRepository.swift in Sources */,
+				B70F965E23ED0648009F0AEE /* WorkTimeRepository.swift in Sources */,
 				B7F5C19B23A00442009AAAA7 /* ViewController.swift in Sources */,
 				B762658123BA767D00EAA54E /* Util.swift in Sources */,
-				B75F10BF23EAC70E0019A844 /* WorkHourModel.swift in Sources */,
+				B75F10BF23EAC70E0019A844 /* WorkTimeModel.swift in Sources */,
+				B74FB9B6249A7102006D7DBC /* DateExtension.swift in Sources */,
 				B7FFDC882466A14D00BCB7DD /* EditSectionTableViewCell.swift in Sources */,
 				B7F5C19723A00442009AAAA7 /* AppDelegate.swift in Sources */,
 				B70F966623ED0676009F0AEE /* ManageRepository.swift in Sources */,

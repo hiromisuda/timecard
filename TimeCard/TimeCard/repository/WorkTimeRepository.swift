@@ -8,7 +8,7 @@
 
 import RealmSwift
 
-class WorkHourRepository: CreateSerialNumber{
+class WorkTimeRepository: CreateSerialNumber{
     var realm: Realm
     
     init() {
@@ -16,27 +16,32 @@ class WorkHourRepository: CreateSerialNumber{
     }
     
     // 全件検索
-    func findAll() -> Results<WorkHourModel> {
-      return realm.objects(WorkHourModel.self)
+    func findAll() -> Results<WorkTimeModel> {
+      return realm.objects(WorkTimeModel.self)
     }
     
     // 条件指定
-    func find(predicate: NSPredicate) -> Results<WorkHourModel> {
-      return realm.objects(WorkHourModel.self).filter(predicate)
+    func find(predicate: NSPredicate) -> Results<WorkTimeModel> {
+      return realm.objects(WorkTimeModel.self).filter(predicate)
     }
     
     //指定したidに該当するModelを取得
-    func findById(id:Int) -> WorkHourModel{
-        return realm.objects(WorkHourModel.self).filter("id == \(id)").first!
+    func findById(id:Int) -> WorkTimeModel{
+        return realm.objects(WorkTimeModel.self).filter("id == \(id)").first!
+    }
+    
+    func findByStartDate(from day: Date) -> Results<WorkTimeModel> {
+        let result = realm.objects(WorkTimeModel.self).filter("startDate == %@", day)
+        return result
     }
     
     //idの最大値を取得
     func getNewID() -> Int{
-        return newId(model: WorkHourModel())
+        return newId(model: WorkTimeModel())
     }
     
     // データ追加と更新
-    func add(model: WorkHourModel) {
+    func add(model: WorkTimeModel) {
         do{
             try! realm.write {
               realm.add(model, update: .modified)
@@ -49,7 +54,7 @@ class WorkHourRepository: CreateSerialNumber{
     }
     
     // データ削除
-    func delete(model: WorkHourModel) {
+    func delete(model: WorkTimeModel) {
         do{
             try! realm.write {
               realm.delete(model)

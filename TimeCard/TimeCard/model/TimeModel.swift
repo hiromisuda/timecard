@@ -1,6 +1,9 @@
 import RealmSwift
 import Foundation
 
+/**
+ 廃止
+ */
 class TimeModel : Object{
     @objc dynamic var id: Int = 0
     @objc dynamic var date: String = "" //削除

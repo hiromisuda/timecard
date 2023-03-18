@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rEv-ue-LWU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rEv-ue-LWU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -340,7 +340,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="138" height="147.5"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BK1-Oc-0VD">
-                                                                                <rect key="frame" x="10" y="10" width="118" height="30"/>
+                                                                                <rect key="frame" x="10" y="10" width="118" height="127.5"/>
                                                                                 <state key="normal" title=" 出 勤 ">
                                                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 </state>
@@ -371,7 +371,7 @@
                                                                         <rect key="frame" x="138" y="0.0" width="138" height="147.5"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2H-AJ-xkG">
-                                                                                <rect key="frame" x="10" y="10" width="118" height="30"/>
+                                                                                <rect key="frame" x="10" y="10" width="118" height="127.5"/>
                                                                                 <state key="normal" title=" 休 憩 ">
                                                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 </state>
@@ -402,7 +402,7 @@
                                                                         <rect key="frame" x="276" y="0.0" width="138" height="147.5"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAt-zf-t0s">
-                                                                                <rect key="frame" x="10" y="10" width="118" height="30"/>
+                                                                                <rect key="frame" x="10" y="10" width="118" height="127.5"/>
                                                                                 <state key="normal" title=" 退 勤 ">
                                                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 </state>

@@ -1,17 +1,14 @@
 //
-//  TaskRepository.swift
+//  DetailTimeRepository.swift
 //  TimeCard
 //
-//  Created by works on 2020/02/07.
+//  Created by works on 2020/06/10.
 //  Copyright © 2020 pupuplanet. All rights reserved.
 //
 
 import RealmSwift
 
-/**
- TODO 次リリース
- */
-class TaskRepository: CreateSerialNumber{
+class DetailTimeRepository: CreateSerialNumber{
     var realm: Realm
     
     init() {
@@ -19,27 +16,27 @@ class TaskRepository: CreateSerialNumber{
     }
     
     // 全件検索
-    func findAll() -> Results<TaskModel> {
-      return realm.objects(TaskModel.self)
+    func findAll() -> Results<DetailTimeModel> {
+      return realm.objects(DetailTimeModel.self)
     }
     
     // 条件指定
-    func find(predicate: NSPredicate) -> Results<TaskModel> {
-      return realm.objects(TaskModel.self).filter(predicate)
+    func find(predicate: NSPredicate) -> Results<DetailTimeModel> {
+      return realm.objects(DetailTimeModel.self).filter(predicate)
     }
     
     //指定したidに該当するModelを取得
-    func findById(id:Int) -> TaskModel{
-        return realm.objects(TaskModel.self).filter("id == \(id)").first!
+    func findById(id:Int) -> DetailTimeModel{
+        return realm.objects(DetailTimeModel.self).filter("id == \(id)").first!
     }
     
     //idの最大値を取得
     func getNewID() -> Int{
-        return newId(model: TaskModel())
+        return newId(model: DetailTimeModel())
     }
     
     // データ追加と更新
-    func add(model: TaskModel) {
+    func add(model: DetailTimeModel) {
         do{
             try! realm.write {
               realm.add(model, update: .modified)
@@ -52,7 +49,7 @@ class TaskRepository: CreateSerialNumber{
     }
     
     // データ削除
-    func delete(model: TaskModel) {
+    func delete(model: DetailTimeModel) {
         do{
             try! realm.write {
               realm.delete(model)
@@ -72,3 +69,4 @@ class TaskRepository: CreateSerialNumber{
     
     
 }
+

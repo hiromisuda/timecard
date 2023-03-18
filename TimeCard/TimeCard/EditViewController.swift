@@ -7,48 +7,38 @@
 //
 
 import UIKit
+import RealmSwift
 
 class EditViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
 
+    var workTimeModels:Results<WorkTimeModel>!
+    var workTimeRepo = WorkTimeRepository()
+    
     var items1: NSMutableArray = ["ねずみ", "うし", "とら", "うさぎ", "りゅう"]
     var items2: NSMutableArray = ["へび", "うま","ひつじ","さる","とり","いぬ","いのしし","ねこ","しまうま"]
     var items3: NSMutableArray = ["やぎ","くま","しろくま","こぶら","ごりら","ぶた","ぞう","おおかみ"]
     var section1: Dictionary = [String:NSMutableArray]()
     var section2: Dictionary = [String:NSMutableArray]()
     var section3: Dictionary = [String:NSMutableArray]()
-    var sections: Array = [Dictionary<String,NSMutableArray>]()
+    
+    var dateList: Array = [Dictionary<String,NSMutableArray>]()
+
     var isOpen1 = false
     var isOpen2 = false
     var isOpen3 = false
     
-//    var arr:[String]  = [
-//        "2020/04/20(月) 10:00-19:00"
-//        ,"2020/04/19(日) 10:00-19:00"
-//        ,"2020/04/18(土) 10:00-19:00"
-//        ,"2020/04/17(金) 10:00-19:00"
-//        ,"2020/04/16(木) 10:00-19:00"
-//        ,"2020/04/15(水) 10:00-19:00"
-//        ,"2020/04/14(火) 10:00-19:00"
-//        ,"2020/04/13(月) 10:00-19:00"
-//        ,"2020/04/12(日) 10:00-19:00"
-//        ,"2020/04/11(土) 10:00-19:00"
-//    ]
-//
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //------------------------
+        // TableView初期設定
+        //------------------------
         tableView.dataSource = self
         tableView.delegate = self
-        
-        // セクションのタイトルとデータの配列を設定
-        section1 = ["セクション１":items1]
-        section2 = ["セクション２":items2]
-        section3 = ["セクション３":items3]
-        sections.append(section1)
-        sections.append(section2)
-        sections.append(section3)
-        
+                
         //ヘッダーのViewを登録＆TableViewに設定
         tableView.register (UINib(nibName: "EditTableHeaderViewCell", bundle: nil),forCellReuseIdentifier:"headerCell")
         let headerCell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "headerCell")!
@@ -60,6 +50,45 @@ class EditViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         //TODO セルのViewを登録
         
+
+        //------------------------
+        //日付リスト作成
+        //------------------------
+        //1ヶ月分のWorkTimeNodel取得
+        for i in 1..<30 {
+        
+            let day = Date()
+            let targetDay = Calendar.current.date(byAdding: .day, value: i * -1, to: day)!
+            print(targetDay);
+        }
+        
+        let res = workTimeRepo.findByStartDate(from: Date())
+        print("検索結果：\(res.count)")
+        
+        //WorkTimeModelから、日付毎のデータを取得
+        
+        //該当データがない場合、その日の労働はなしとする
+        
+        var workTime: NSMutableArray = ["ねずみ", "うし", "とら", "うさぎ", "りゅう"]
+        var section1 = ["セクション１":items1]
+        
+        //同日をまとめるサンプル
+//        let d = Date()
+//        let dateA = Date()
+//        let dateBa = Calendar.current.date(byAdding: .hour, value: 1, to: Date())!
+//        if d.getYYYYMMDD(date: dateA) == d.getYYYYMMDD(date: dateBa) {
+//            print("Same")
+//        } else {
+//            print("Different")
+//        }
+        
+        
+        //リストに追加
+        dateList.append(section3)
+        
+        //全件データ取得
+        self.workTimeModels = self.workTimeRepo.findAll()
+        
     }
     
     func reloadTable(){
@@ -69,13 +98,13 @@ class EditViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     // セクション数
     public func numberOfSections(in tableView: UITableView) -> Int {
-        return self.sections.count
+        return self.dateList.count
     }
     
     // セクションのタイトルのみ設定※廃止
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         var title = ""
-        for (key) in sections[section].keys
+        for (key) in dateList[section].keys
         {
             title = key
         }
@@ -88,7 +117,7 @@ class EditViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         //セクションを設定
         let sectionView = tableView.dequeueReusableHeaderFooterView(withClass: EditSectionTableViewCell.self)
         
-        for (key) in sections[section].keys
+        for (key) in dateList[section].keys
         {
             //label.text = key
             //sectionView.setLabel(str: key)
@@ -157,7 +186,7 @@ class EditViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
         // セルにテキストを出力する。
         let cell = tableView.dequeueReusableCell(withIdentifier:  "cell", for:indexPath)
-        for (value) in sections[indexPath.section].values
+        for (value) in dateList[indexPath.section].values
         {
             cell.textLabel?.text = value[indexPath.row] as? String
         }

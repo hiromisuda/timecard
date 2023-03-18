@@ -8,6 +8,9 @@
 
 import RealmSwift
 
+/**
+TODO 次リリース
+*/
 class StartPointRepository: CreateSerialNumber{
     var realm: Realm
     

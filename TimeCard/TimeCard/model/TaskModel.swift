@@ -6,6 +6,10 @@
 //  Copyright © 2020 pupuplanet. All rights reserved.
 //
 
+/**
+ TODO 次リリース
+ タスク
+ */
 import RealmSwift
 
 class TaskModel : Object{

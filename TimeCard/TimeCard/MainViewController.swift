@@ -19,7 +19,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var lunchButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
-    var workHourRepo = WorkHourRepository()
+    var workHourRepo = WorkTimeRepository()
     
     var counter = 0
     var isStart = false
@@ -55,18 +55,18 @@ class MainViewController: UIViewController {
         print("出勤")
         
         //登録データ作成
-        let workHourModel:WorkHourModel = WorkHourModel()
+        let workTimeModel:WorkTimeModel = WorkTimeModel()
 
         
         let date = Date()
         print("開始時刻　：\(date)")
-        workHourModel.startDate = date
+        workTimeModel.startDate = date
         let newId = self.workHourRepo.getNewID()
-        workHourModel.id = newId
+        workTimeModel.id = newId
         self.editId = newId
         
         //DB登録
-        self.workHourRepo.add(model: workHourModel)
+        self.workHourRepo.add(model: workTimeModel)
 
         //労働中
         self.viewStatusUI(status: 1)
@@ -112,13 +112,13 @@ class MainViewController: UIViewController {
         print("退勤")
         
         //登録データ作成
-        let workHourModel:WorkHourModel = self.workHourRepo.findById(id: self.editId)
+        let workTimeModel:WorkTimeModel = self.workHourRepo.findById(id: self.editId)
         
         //DB更新
         let date = Date()
         print("終了時刻　：\(date)")
         self.workHourRepo.transaction {
-            workHourModel.endDate = date
+            workTimeModel.endDate = date
             
             //休憩中の場合は休憩終了時間も一緒に設定
 //            if(isLunch){

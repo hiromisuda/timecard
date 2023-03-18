@@ -8,10 +8,14 @@
 
 import RealmSwift
 
+/**
+ 管理系
+ */
 class ManageModel : Object{
     @objc dynamic var id: Int = 0
+    
+    //0:労働してない、1:労働中、2:休憩中
     @objc dynamic var status: Int = 0
-    @objc dynamic var isStartPointIndividually: Bool = false
 
     override static func primaryKey() -> String? {
         return "id"

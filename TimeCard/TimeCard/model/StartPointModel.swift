@@ -8,6 +8,10 @@
 
 import RealmSwift
 
+/**
+ TODO 次リリース
+ 基準時間
+ */
 class StartPointModel : Object{
     @objc dynamic var id: Int = 0
     @objc dynamic var startPoint: Int = 0

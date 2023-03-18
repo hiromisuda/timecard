@@ -13,8 +13,8 @@ class HistoryTableViewController: UIViewController,UITableViewDelegate,UITableVi
 
     @IBOutlet weak var tableView: UITableView!
     
-    var models:Results<WorkHourModel>!
-    var workHourRepo = WorkHourRepository()
+    var models:Results<WorkTimeModel>!
+    var workHourRepo = WorkTimeRepository()
     
     override func viewDidLoad() {
         super.viewDidLoad()

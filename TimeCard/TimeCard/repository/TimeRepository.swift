@@ -9,6 +9,9 @@
 import Foundation
 import RealmSwift
 
+/**
+廃止
+*/
 class TimeRepository: CreateSerialNumber{
     var realm: Realm
     
